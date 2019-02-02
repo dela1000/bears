@@ -8,6 +8,8 @@
 
 The installation process might take a few minutes.
 
+When it completes a new tab will open on the browser at `http://localhost:3000/` to use the app.
+
 ## Relevant files:
 
 - `backend/db.js` writes the SQL database if it's not found on the current machine.
