@@ -20,7 +20,7 @@ class SearchById extends React.Component {
     return (
       <form onSubmit={this.searchbyId} autoComplete="off">
         <div className="form-group">
-          <input name="numBears" className="form-control" ref={this.idRef} min="0" type="number" placeholder="Id" />
+          <input name="numBears" className="form-control" ref={this.idRef} min="1" type="number" placeholder="Id" />
         </div>
         <button className="btn btn-primary" type="submit">Search By Id</button>
       </form>
