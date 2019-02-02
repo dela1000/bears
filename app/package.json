@@ -1,0 +1,28 @@
+{
+  "name": "bearsightingsapp",
+  "version": "1.0.0",
+  "description": "Bear Sightings Frontend",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "concurrently": "^4.1.0",
+    "lodash": "^4.17.11",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "^2.1.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "watch": "concurrently --name \"nodemon server.js\" "
+  },
+  "author": "Daniel De La Rosa",
+  "license": "ISC",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

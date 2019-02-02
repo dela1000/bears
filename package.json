@@ -1,0 +1,28 @@
+{
+  "name": "bearsightings",
+  "version": "1.0.0",
+  "description": "Bear Tracker for Dave.com",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db": "node ./backend/db.js",
+    "postinstall": "npm start",
+    "server": "nodemon server.js",
+    "client": "cd app && npm i && npm start",
+    "start": "concurrently \"npm run db\" \"npm run server\" \"npm run client\" "
+  },
+  "author": "Daniel De La Rosa",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "lodash": "^4.17.11",
+    "moment": "^2.24.0",
+    "mysql": "^2.16.0",
+    "path": "^0.12.7",
+    "request": "^2.88.0",
+    "url": "^0.11.0"
+  }
+}
