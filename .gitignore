@@ -38,10 +38,4 @@ Thumbs.db
 
 # Secrets file#
 ######################
-backend/secrets.js
-
-/backend/server.js
-./backend/server.js
 /backend/secrets.js
-./backend/secrets.js
-./backend/secrets.js

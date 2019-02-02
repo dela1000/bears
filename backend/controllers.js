@@ -1,5 +1,4 @@
 const req = require('request');
-const parser = require('body-parser');
 
 const models = require('./models')
 
