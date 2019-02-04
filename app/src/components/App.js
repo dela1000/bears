@@ -73,7 +73,7 @@ class App extends React.Component {
       let noResultsFound = {...this.state.noResultsFound};
       noResultsFound = true;
       this.setState({ noResultsFound });
-      setTimeout(function() {this.setState({noResultsFound: false});}.bind(this), 3000);
+      setTimeout(function() {this.setState({noResultsFound: false});}.bind(this), 1500);
     }
 
     render() {
@@ -90,15 +90,15 @@ class App extends React.Component {
                   </label>
                     <select className="form-control" type="text" name="view" value={this.state.sort} onChange={this.changeView} >
                     <option value="add">Add Sighting</option>
-                    <option value="searchById">Search Sightings by Id</option>
-                    <option value="searchByDetails">Search by Sightings Details</option>
+                    <option value="searchById">Search by Id</option>
+                    <option value="searchByDetails">Search by Details</option>
                   </select>
                 </div>
               </div>
             </div>
             <div className="col-6">
               <div>{ this.state.noResultsFound ? <h3 className="alert alert-warning">No results found</h3> : null } </div>
-              <div>{ this.state.bearSightings.length === 1 ? <h3 className="alert alert-success">Found {this.state.bearSightings.length} bear sighting</h3> : null } </div>
+              <div>{ this.state.bearSightings.length === 1 ? <h3 className="alert alert-success">Found 1 bear sighting</h3> : null } </div>
               <div>{ this.state.bearSightings.length > 1 ? <h3 className="alert alert-success">Found {this.state.bearSightings.length} bear sightings</h3> : null } </div>
             </div>
           </div>

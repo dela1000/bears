@@ -42,12 +42,12 @@ class Search extends React.Component {
         </div>
         <div className="form-group">
           <label>Bear Type:</label>
-          <input className="form-control" name="bear_type" type="text" placeholder="Bear Type" onChange={this.updateParams} />
+          <input className="form-control" name="bear_type" type="text" placeholder="Bear Type" maxlength="30" onChange={this.updateParams} />
         </div>
 
         <div className="form-group">
           <label>Zip Code:</label>
-          <input className="form-control" name="zip_code" type="text" placeholder="Zip Code" onChange={this.updateParams} />
+          <input className="form-control" name="zip_code" type="text" placeholder="Zip Code" maxlength="5" onChange={this.updateParams} />
         </div>
         <div className="form-group">
           <label>

@@ -55,22 +55,22 @@ class AddSighting extends React.Component {
         <label className="font-weight-bold">Add Sighting:</label>
         <div className="form-group">
           <label>Bear Type:</label>
-          <input name="bearType" className="form-control" ref={this.bearTypeRef} type="text" placeholder="Bear Type" required/>
+          <input name="bearType" className="form-control" ref={this.bearTypeRef} type="text" placeholder="Bear Type" required maxlength="30" />
         </div>
         
         <div className="form-group">
           <label>Notes:</label>
-          <textarea name="notes" className="form-control" ref={this.notesRef} placeholder="Notes" />
+          <textarea name="notes" className="form-control" ref={this.notesRef} placeholder="Notes" maxlength="200" />
         </div>
 
         <div className="form-group">
           <label>Zip Code:</label>
-          <input name="zipCode" className="form-control"  ref={this.zipCodeRef} type="text" placeholder="Zip Code" required/>
+          <input name="zipCode" className="form-control"  ref={this.zipCodeRef} type="text" placeholder="Zip Code" required maxlength="5" />
         </div>
 
         <div className="form-group">
           <label>Number of Bears:</label>
-          <input name="numBears" className="form-control" ref={this.numBearsRef} min="0" type="number" placeholder="Number of Bears" />
+          <input name="numBears" className="form-control" ref={this.numBearsRef} min="0" max="100" type="number" placeholder="Number of Bears" />
         </div>
         
         <button className="btn btn-primary" type="submit">Add Sighting</button>

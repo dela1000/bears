@@ -5,8 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "db": "node ./backend/db.js",
     "postinstall": "npm start",
+    "db": "node ./backend/db.js",
     "server": "nodemon server.js",
     "client": "cd app && npm i && npm start",
     "start": "concurrently \"npm run db\" \"npm run server\" \"npm run client\" "

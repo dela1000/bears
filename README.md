@@ -6,9 +6,10 @@
 
 2. After that, run `npm i` in the root folder. This will install both sets of dependecies for the server and for the ReactJS application, will create a SQL database, will run a NodeJS server which hosts the API, and will run the React app on the browser. 
 
-The installation process might take a few minutes.
+The installation process might take a few minutes. It will be ready when the browser opens the page and it reads:
+### `You can now view bearsightingsapp in the browser.`
 
-When it completes a new tab will open on the browser at `http://localhost:3000/` to use the app.
+A new tab on Chrome will open on the browser at `http://localhost:3000/` to use the React app.
 
 ## Relevant files:
 
